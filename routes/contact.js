@@ -2,7 +2,7 @@ import express from 'express'
 import {getContacts, getContact, createContact, updateContact, deleteContact} from '../controllers/contact.js'
 const router = express.Router();
 
-router.get('/', getContacts);
+router.get('/contacts', getContacts);
 router.get('/:id', getContact);
 router.post('/', createContact);
 router.put('/:id', updateContact);
